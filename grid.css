@@ -1,0 +1,127 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #5C9ED9;
+}
+@font-face {
+    font-family: "simpsons";
+    src: url(Simpsonfont\ DEMO.otf);
+}
+@font-face {
+    font-family: "text";
+    src: url(NotoSansDisplay-VariableFont_wdth\,wght.ttf);
+}
+p{
+    font-family:"text";
+}
+h1,h2, h3, h4, h5, h6{
+    font-family: "simpsons";
+}
+#page {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "mainnav mainnav"
+    "banner banner"
+    "content sidenav";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 250px;
+    width:100%;
+    align-items: center;
+   
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    height:90px;
+    align-items: middle;
+}
+#header #logo{
+    position: absolute;
+    text-align: center;
+    left: 20px;
+    margin: 6px;
+    
+}
+#mainnav {
+    grid-area: mainnav;
+    background-color: #1769B6;
+}
+#mainnav a{
+    float: left;
+    margin:0;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:5px;
+}
+#mainnav a:hover {
+    background-color: #74abdb;
+  }
+#banner {
+    grid-area: banner;
+    background-image: url("simpson\ banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+
+}
+#main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#content {
+    grid-area: content;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-left:1em;
+    margin-right:1em;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 12px;
+    max-width:1000px;
+}
+
+#content p{
+ margin-left:2em;
+ margin-right:2em;
+}
+#content hr{
+    width: 90%;
+}
+
+#sidenav {
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffffff;
+    color: #000000;
+    margin-top: 3em;
+    min-height: 530px;
+    max-height: 530px;
+    min-width: 200px;
+    max-width:200px;
+    border-radius: 12px;
+    position: absolute;
+    right:25px;
+}
+
+#sidenav p{
+    text-align: left;
+    margin-left:10px;
+    margin-right:10px;
+    
+}
+
+@media only screen and (min-width: 750px){
+    #banner {
+        grid-area: banner;
+        height: 320px;
+    }
+}
