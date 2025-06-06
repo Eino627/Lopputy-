@@ -82,6 +82,7 @@ h1,h2, h3, h4, h5, h6{
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 #content1 {
     grid-area: content;
@@ -105,22 +106,28 @@ h1,h2, h3, h4, h5, h6{
     background-color: #ffffff;
     color: #000000;
     border-radius: 12px;
+    justify-content: center;
     
 }
 .image_text{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    text-align: center; 
+    font-size: 30px;
+    max-width: 750px;
 }
+
 #content2_flex{
     display: flex;
     flex-direction: row;
-    
+    flex-wrap:wrap;
 }
 #content2 a{
-margin:50px;
+margin-top:50px;
+margin-left: 50px;
+margin-right: 50px;
 }
+
 
 #content1 p{
  margin-left:2em;
@@ -129,7 +136,9 @@ margin:50px;
 #content1 hr{
     width: 90%;
 }
-
+.showcase {
+    height: 300px;
+}
 #sidenav {
     grid-area: sidenav;
     display: flex;
@@ -152,6 +161,17 @@ margin:50px;
     margin-right:10px;
     
 }
+.return_button{
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}
+.return_button:hover{
+    color: #1769B6;
+}
 
 @media only screen and (min-width: 750px){
     #banner {
@@ -159,5 +179,31 @@ margin:50px;
     }
     #springfield_banner {
         height: 320px;
+    }
+    .showcase{
+        height: 350px;
+    }
+}
+@media only screen and (min-width: 1210px){
+    #content2_flex {
+        max-width:1210px;
+
+    }
+    .return_button{
+        top: 200px;
+        left: 50px;
+    }
+}
+@media only screen and (min-width: 1367px){
+    #content2_flex {
+        max-width:1367px;
+        
+    }
+    .showcase{
+        height: 600px;
+    }
+    .return_button{
+        top: 150px;
+        left: 300px;
     }
 }
