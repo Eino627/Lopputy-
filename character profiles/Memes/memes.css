@@ -1,0 +1,272 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #5C9ED9;
+}
+@font-face {
+    font-family: "simpsons";
+    src: url(../../fonts/Simpsonfont\ DEMO.otf);
+}
+@font-face {
+    font-family: "text";
+    src: url(../../fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf);
+}
+p{
+    font-family:"text";
+}
+h1,h2, h3, h4, h5, h6{
+    font-family: "simpsons";
+}
+
+#page {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "mainnav mainnav"
+    "banner banner"
+    "sidenav content";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 330px 1fr;
+    width:100%;
+    align-items: center;
+   
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    height:90px;
+    align-items: middle;
+}
+#header #logo{
+    position: absolute;
+    text-align: center;
+    left: 20px;
+    margin: 6px;
+    
+}
+#mainnav {
+    grid-area: mainnav;
+    background-color: #1769B6;
+}
+#mainnav a{
+    float: left;
+    margin:0;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:5px;
+}
+#mainnav a:hover {
+    background-color: #74abdb;
+  }
+#sidenav {
+    grid-area: sidenav;
+    text-align: center;
+    height:450px;
+    width:300px;
+}
+#sidenav img {
+    height: 450px;
+    width: auto;
+    
+}
+#main {
+    grid-area: content;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: right;
+    height: 466px;
+    width: 30em;
+    font-size: 12px;
+}
+.äänet button{
+    width: 100px;
+    height: 30px;
+}
+.celeb{
+    display: flex;
+    flex-direction: row;
+    
+}
+.celeb a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.celeb a:hover{
+    color: #1769B6;
+}
+.celeb img{
+    width: auto;
+    height: 90px;
+    float: left;
+    margin-left: 43px;
+    margin-top: 10px;
+    
+}
+#info_meme {
+    background-color: #5C9ED9;  
+    padding-top: 30px;
+    padding-bottom:10px;
+    text-align: left;
+    
+}
+#info_meme a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #5d52ff;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#info_meme a:hover{
+    background-color: #3d3dff;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#content img{
+    height: 110px;
+    padding: 10px;
+    
+}
+
+.return_button{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    left: 270px;
+}
+
+@media screen and (min-width: 1670px) {
+    
+#page {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "mainnav mainnav"
+    "banner banner"
+    "sidenav content";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 700px 1fr;
+    width:100%;
+    align-items: center;
+   
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    height:90px;
+    align-items: middle;
+}
+#header #logo{
+    position: absolute;
+    text-align: center;
+    left: 20px;
+    margin: 6px;
+    
+}
+#mainnav {
+    grid-area: mainnav;
+    background-color: #1769B6;
+}
+#mainnav a{
+    float: left;
+    margin:0;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:5px;
+}
+#mainnav a:hover {
+    background-color: #74abdb;
+  }
+#sidenav {
+    grid-area: sidenav;
+    text-align: center;
+    height:780px;
+    width:550px;
+}
+#sidenav img {
+    height: 780px;
+    width: auto;
+    margin: 10px 0;
+}
+#main {
+    grid-area: content;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: right;
+    height: 780px;
+    width: 1000px;
+    font-size: 23px;
+}
+.äänet button{
+    width: 300px;
+    height: 60px;
+}
+.celeb{
+    display: flex;
+    flex-direction: row;
+    
+}
+.celeb a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.celeb img{
+    width: auto;
+    height: 170px;
+    float: left;
+    margin-left: 43px;
+    margin-top: 10px;
+   
+}
+#info_meme {
+    background-color: #5C9ED9;  
+    padding-top: 40px;
+    padding-bottom:10px;
+    text-align: left;
+    
+}
+#info_meme a{
+    font-size: 40px;
+    text-decoration: none;
+    background-color: #5d52ff;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#info_meme a:hover{
+    background-color: #3d3dff;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#content img{
+    height: 220px;
+    padding: 20px;
+    
+}
+.return_button{
+    left: 960px;
+}
+}

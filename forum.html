@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simpsons etusivu</title>
-    <link rel="stylesheet" href="grid.css">
-    <script src="Simpson.js"></script>
+    <link rel="stylesheet" href="forum.css">
+    <script src="Simpson.js" defer></script>
     
 </head>
 <body>
@@ -23,12 +23,22 @@
             <a href="characters.html">Characters</a>
             <a href="forum.html">Forum</a>
         </div>
-        <div id="banner">
-
-        </div>
         <div id="main">
             <div id="content">
-                
+                <button id="send" onclick="open_dialog()">New message</button>
+                <dialog id="dialog">
+                    <p>Name <input type="text" id="name_input">
+                    </p>
+                    <p>Title <input type="text"  id="title_input">
+                    </p>
+                    <textarea id="input_message" rows="8" cols="40"></textarea>
+                    <button id="Cancel" onclick="close_dialog()">Cancel</button>
+                    <button id="Send" onclick="create_message()">Send</button>
+                </dialog>
+                <div id="messages">
+                    <hr>
+                    
+                </div>
             </div>
         </div>
     </div>    

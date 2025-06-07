@@ -1,0 +1,70 @@
+<!DOCTYPE html></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons etusivu</title>
+    <link rel="stylesheet" href="characters.css">
+    
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <a href="../index.html">
+                <img src="../photos/Simpson logo.png" width="auto" height="80px" id="logo">
+            </a>
+            <h1>The Simpsons Page</h1>
+        </div>
+
+        <div id="mainnav">
+            <a href="../Springfield.html">Springfield</a>
+            <a href="../characters.html">Characters</a>
+            <a href="../forum.html">Forum</a>
+        </div>
+        <div id="sidenav">
+            <div id="content3">
+                <img class="personal_info" src="../Photos/lisa_per.png" height="400" alt="">
+            </div>
+        </div>
+        <div id="main">
+            <div id="info_meme">
+                <a href="Lisa.html">Info</a>
+                <a href="Memes/lisa_meme.html">Meme</a>
+            </div>
+            <div id="content">
+                <h2>Lisa Simpson</h2>
+                <p>Lisa Simpson is the middle child of the Simpson family in the animated series The Simpsons. She is highly intelligent, musically talented, and socially conscious. Lisa is often portrayed as the voice of reason in the family.</p>
+<p>Lisa excels at school, plays the saxophone, and is passionate about environmental and social issues. She often struggles to fit in due to her intellect and ideals but remains strong in her convictions.</p>
+<p>Her compassion, wisdom, and drive to make the world a better place make Lisa one of the most inspiring and respected characters in the series.</p>
+                <div class="äänet">
+                    <audio id="audio1" src="Audio/Lisa/back_to_work.wav"></audio>
+                    <button onclick="audio1()">Sound clip 1</button>
+                    <audio id="audio2" src="Audio/Lisa/dont_think_so2.wav"></audio>
+                    <button onclick="audio2()">Sound clip 2</button>
+                    <audio id="audio3" src="Audio/Lisa/logical_explanation.wav"></audio>
+                    <button onclick="audio3()">Sound clip 3</button>
+                </div>
+                <div class="celeb">
+                    <img src="../Photos/Yeardley Smith.jpg" alt="">
+                    <a href="https://www.imdb.com/name/nm0810379/?ref_=ttfc_fcr_cst_5"><p>Yeardley Smith</p></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function audio1(){
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+        function audio2(){
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+        function audio3(){
+            var sound = document.getElementById("audio3");
+            sound.play()
+        }
+    </script>   
+</body>
+</html>

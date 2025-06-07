@@ -1,0 +1,70 @@
+<!DOCTYPE html></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons etusivu</title>
+    <link rel="stylesheet" href="characters.css">
+    
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <a href="../index.html">
+                <img src="../photos/Simpson logo.png" width="auto" height="80px" id="logo">
+            </a>
+            <h1>The Simpsons Page</h1>
+        </div>
+
+        <div id="mainnav">
+            <a href="../Springfield.html">Springfield</a>
+            <a href="../characters.html">Characters</a>
+            <a href="../forum.html">Forum</a>
+        </div>
+        <div id="sidenav">
+            <div id="content3">
+                <img class="personal_info" src="../Photos/moe_per.png" height="400" alt="">
+            </div>
+        </div>
+        <div id="main">
+            <div id="info_meme">
+                <a href="Moe.html">Info</a>
+                <a href="Memes/moe_meme.html">Meme</a>
+            </div>
+            <div id="content">
+                <h2>Moe Szyslak</h2>
+                <p>Moe Szyslak is the grumpy yet endearing bartender who runs Moe’s Tavern in The Simpsons. He serves as a friend (and frequent verbal target) of Homer Simpson and other regular patrons like Barney and Lenny.</p>
+                <p>Moe is known for his rough exterior, raspy voice, and short temper, but he occasionally shows a softer, more vulnerable side. He has a tragicomic life and often struggles with loneliness and failed romances.</p>
+                <p>Despite his flaws, Moe remains a loyal friend and an irreplaceable part of the Springfield community.</p>
+                <div class="äänet">
+                    <audio id="audio1" src="Audio/Moe/my_eye.wav"></audio>
+                    <button onclick="audio1()">Sound clip 1</button>
+                    <audio id="audio2" src="Audio/Moe/need_cash.wav"></audio>
+                    <button onclick="audio2()">Sound clip 2</button>
+                    <audio id="audio3" src="Audio/Moe/stupid_moron.wav"></audio>
+                    <button onclick="audio3()">Sound clip 3</button>
+                </div>
+                <div class="celeb">
+                    <img src="../Photos/Hank Azaria.jpg" alt="">
+                    <a href="https://www.imdb.com/name/nm0000279/?ref_=ttfc_fcr_cst_6"><p>Hank Azaria</p></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function audio1(){
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+        function audio2(){
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+        function audio3(){
+            var sound = document.getElementById("audio3");
+            sound.play()
+        }
+    </script>   
+</body>
+</html>

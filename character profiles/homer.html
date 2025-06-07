@@ -1,0 +1,70 @@
+<!DOCTYPE html></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons etusivu</title>
+    <link rel="stylesheet" href="characters.css">
+    
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <a href="../index.html">
+                <img src="../photos/Simpson logo.png" width="auto" height="80px" id="logo">
+            </a>
+            <h1>The Simpsons Page</h1>
+        </div>
+
+        <div id="mainnav">
+            <a href="../Springfield.html">Springfield</a>
+            <a href="../characters.html">Characters</a>
+            <a href="../forum.html">Forum</a>
+        </div>
+        <div id="sidenav">
+            <div id="content3">
+                <img class="personal_info" src="../Photos/homer_per.webp" height="400" alt="">
+            </div>
+        </div>
+        <div id="main">
+            <div id="info_meme">
+                <a href="homer.html">Info</a>
+                <a href="Memes/homer_meme.html">Meme</a>
+            </div>
+            <div id="content">
+                <h2>Homer Simpson</h2>
+                <p>Homer Jay Simpson is the main character of the animated television series The Simpsons. He is the father of Bart, Lisa, and Maggie Simpson, and the husband of Marge Simpson. Homer works at the Springfield Nuclear Power Plant as a safety technician.</p>
+                <p>Homer is known for his bumbling personality, love of donuts, and catchphrase "D'oh!" He often finds himself in humorous situations due to his lack of intelligence and poor decision-making skills.</p>
+                <p>Despite his flaws, Homer is a loving father and husband who cares deeply for his family. His character has become an iconic figure in popular culture.</p>
+                <div class="äänet">
+                    <audio id="audio1" src="Audio/Homer/alcohol1_x.wav"></audio>
+                    <button onclick="audio1()">Sound clip 1</button>
+                    <audio id="audio2" src="Audio/Homer/beer11.wav"></audio>
+                    <button onclick="audio2()">Sound clip 2</button>
+                    <audio id="audio3" src="Audio/Homer/blah1.wav"></audio>
+                    <button onclick="audio3()">Sound clip 3</button>
+                </div>
+                <div class="celeb">
+                    <img src="../Photos/Dan castellaneta.jpg" alt="">
+                    <a href="https://www.imdb.com/name/nm0144657/?ref_=ttfc_fcr_cst_1"><p>Dan Castellaneta</p></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function audio1(){
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+        function audio2(){
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+        function audio3(){
+            var sound = document.getElementById("audio3");
+            sound.play()
+        }
+    </script>   
+</body>
+</html>

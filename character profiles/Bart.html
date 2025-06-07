@@ -1,0 +1,81 @@
+<!DOCTYPE html></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons etusivu</title>
+    <link rel="stylesheet" href="characters.css">
+    
+    <style>
+        #main{
+            height:560px;
+        }
+        @media screen and (min-width: 1670px) {
+            #main{
+                height: 815px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <a href="../index.html">
+                <img src="../photos/Simpson logo.png" width="auto" height="80px" id="logo">
+            </a>
+            <h1>The Simpsons Page</h1>
+        </div>
+
+        <div id="mainnav">
+            <a href="../Springfield.html">Springfield</a>
+            <a href="../characters.html">Characters</a>
+            <a href="../forum.html">Forum</a>
+        </div>
+        <div id="sidenav">
+            <div id="content3">
+                <img class="personal_info" src="../Photos/bart_per.png" height="400" alt="">
+            </div>
+        </div>
+        <div id="main">
+            <div id="info_meme">
+                <a href="Bart.html">Info</a>
+                <a href="Memes/bart_meme.html">Meme</a>
+            </div>
+            <div id="content">
+                <h2>Bart Simpson</h2>
+                <p>Bart Simpson is a central character in the animated television series The Simpsons. He is the eldest child of Homer and Marge Simpson, and the brother of Lisa and Maggie. Bart is a mischievous fourth-grade student known for his rebellious behavior and quick wit.</p>
+                <p>Bart is famous for his pranks, love of skateboarding, and catchphrases like "Eat my shorts!" and "Ay caramba!" He often causes trouble at school and home, but he has a good heart underneath his troublemaking exterior.</p>
+                <p>Despite his antics, Bart shows loyalty to his family and friends. His playful nature and iconic personality have made him a standout figure in pop culture.</p>
+
+                <div class="äänet">
+                    <audio id="audio1" src="Audio/Bart/buttman.wav"></audio>
+                    <button onclick="audio1()">Sound clip 1</button>
+                    <audio id="audio2" src="Audio/Bart/cowabunga.wav"></audio>
+                    <button onclick="audio2()">Sound clip 2</button>
+                    <audio id="audio3" src="Audio/Bart/god.wav"></audio>
+                    <button onclick="audio3()">Sound clip 3</button>
+                </div>
+                <div class="celeb">
+                    <img src="../Photos/Nancy Cartwright.jpg" alt="">
+                    <a href="https://www.imdb.com/name/nm0004813/?ref_=ttfc_fcr_cst_3"><p>Nancy Cartwright</p></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function audio1(){
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+        function audio2(){
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+        function audio3(){
+            var sound = document.getElementById("audio3");
+            sound.play()
+        }
+    </script>   
+</body>
+</html>
